@@ -1,118 +1,146 @@
-.navbar-collapse {
-    height: auto;
-    border-top: 0;
-    box-shadow: none;
-    max-height: none;
-    padding-left: 0;
-    padding-right: 0;
+body{
+    background-color: rgb(34,34,34);
 }
+@media(min-width:  768px) {
+    .navbar-collapse {
+        height: auto;
+        border-top: 0;
+        box-shadow: none;
+        max-height: none;
+        padding-left: 0;
+        padding-right: 0;
+        display: inline-block;
+    }
 
-.navbar-collapse.collapse {
-    display: block !important;
-    width: auto !important;
-    padding-bottom: 0;
-    overflow: visible !important;
+    .navbar-collapse.collapse {
+        display: inline-block !important;
+        width: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+    }
+    .navbar.collapse.in{
+        overflow-x: visible;
+    }
+
+    .navbar-nav,
+    .navbar-nav > li,
+    .navbar-right{
+        float: none !important;
+        padding: 25px 10px;
+        font-size: 20px;
+    }
+    .navbar-brand{
+        font-size: 25px;
+        float: none !important;
+    }
+  .navbar-nav >li.padding{
+        padding:25px 0;
+    }
+    .nav>li>a{
+        padding: 0;
+    }
+
+    .navbar-nav > li:hover {
+        font-weight: bold;
+    }
+
+    .navbar{
+        max-width: 180px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 90px;
+        position: fixed;
+        display: inline-block;
+    }
 }
-
-.navbar-nav,
-.navbar-nav > li,
-.navbar-right,
-.navbar-header,
-.navbar-brand {
-    float: none !important;
-    padding: 15px 12px;
-    font-size: 20px;
+@media(max-width:  480px){
+    .navbar-nav > li{
+        text-align: center;
+    }
+    #myCarousel.carousel.slide.carousel-inner.item.img-responsive {
+        height: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+     #mainContainer1,
+     #mainContainer2{
+         margin-left: 0 !important;
+    }
 }
-
-.navbar-nav > li > a.padding {
-    padding: 15px 3px;
-}
-
-.navbar-nav > li:hover {
-    font-weight: bold;
-}
-
-.navbar-fixed-top {
-    width: 160px;
-    padding-top: 100px;
-    padding-bottom: 100%;
-    display: inline-block;
-}
-
 .icons {
     width: 15px;
 }
 
 #mainContainer2 {
-    margin-left: 210px !important;
+    margin-left: 230px;
 }
 
 #mainContainer1 {
-    margin-left: 160px !important;
+    margin-left: 180px;
     margin-right: 0;
 }
 
 .icons {
-    width: 15px;
+    width: 25px;
+    padding-right: 5px;
 }
-
-#myCarousel .item {
-    height: 500px;
-}
-
-#slide1 {
-    background: url("images/img_medium1.jpg") top center no-repeat;
-}
-
-#slide2 {
-    background: url("images/img_medium2.jpg") top center no-repeat;
-}
-
-#slide3 {
-    background: url("images/img_large3.jpg") top center no-repeat;
-}
-
-@media (max-width: 480px) {
-
-}
-
-@media (max-width: 767px) {
-    #myCarousel .item {
-        height: 310px;
+@media(max-width:  480px){
+    .navbar-nav > li{
+        text-align: center;
     }
-
-    #slide1 {
-        background: url("images/img_small1.jpg") top center no-repeat;
+    #myCarousel.carousel.slide.carousel-inner.item.img-responsive {
+        height: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
-
-    #slide2 {
-        background: url("images/img_small2.jpg") top center no-repeat;
+    #mainContainer1,
+    #mainContainer2{
+        margin-left: 0 !important;
+        background: url("images/black-and-white-guitar-Wallpaper.jpg")!important;
     }
-
-    #slide3 {
-        background: url("images/img_medium3.jpg") top center no-repeat;
+    .carousel-caption.text{
+        color: ghostwhite;
+        font-size: 10px;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizelegibility;
+    }
+    .carousel-caption>h2{
+        font-size: 15px;
     }
 }
-
+@media (max-width: 768px) {
+    #myCarousel.item {
+        height: 100%;
+    }
+    .carousel-caption.text{
+       color: ghostwhite;
+        font-size :15px ;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizelegibility;
+    }
+    .carousel-caption>h2{
+        font-size: 20px;
+    }
+    .navbar{
+        margin-top: 15px;
+    }
+}
 @media (min-width: 1200px) {
     #myCarousel .item {
         height: 629px;
     }
-
-    #slide1 {
-        background: url("images/img_large1.jpg") top center no-repeat;
-    }
-
-    #slide2 {
-        background: url("images/img_large2.jpg") top center no-repeat;
-    }
-
-    #slide3 {
-        background: url("images/Amplifier-Controls-Music-Desktop-High-Definition-Wallpaper.jpg") top center no-repeat;
+    .carousel-caption.text{
+        color:ghostwhite;
+        font-size: 20px;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizelegibility;
     }
 }
 
-.img-responsive {
+.img-responsive.about-us-img {
     padding: 5px;
     display: inline-block;
 }
@@ -131,22 +159,19 @@
     padding-top: 25px;
     margin: 0;
 }
-
-.form-group {
-    margin-left: 900px;
-    margin-top: 15px;
-    position: absolute;
-    display: inline-block;
-    z-index: 2;
-}
-
-.form-control {
-    background-color: transparent;
-    border-color: transparent;
-    opacity: 3;
-}
-
 .carousel .slide {
     position: absolute;
     z-index: 1;
+}
+.media-text{
+    color: #ffffff;
+}
+.transparent-box{
+    border-radius: 5px;
+    background-color: #000000;
+    opacity:0.6;
+}
+.transparent-box h2,
+.transparent-box p{
+    opacity: 1;
 }
